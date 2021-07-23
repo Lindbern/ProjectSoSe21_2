@@ -1,0 +1,7 @@
+{
+"Nachname":{"type":"string","stereotype":"primitive","label":"Nachname"},
+"Name":{"type":"string","stereotype":"primitive","label":"Name"},
+"Geburtsdatum":{"type":"date","stereotype":"primitive","label":"Geburtsdatum"},
+"Telefonnummer":{"type":"string","stereotype":"primitive","label":"Telefonnummer"},
+"Adresse":{"type":"AdresseT","stereotype":"structure","group":"true","label":"AdresseT"}
+}

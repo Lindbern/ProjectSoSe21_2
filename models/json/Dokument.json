@@ -1,5 +1,46 @@
 {
-"Bezeichnung":{"type":"BezeichnungT","stereotype":"enumeration","classAlias":"BezeichnungT0","label":"Bezeichnung"},
-"dateiname":{"type":"fileT","stereotype":"structure","group":"true","label":"fileT"},
-"_Patient":{"type":"foreign","stereotype":"relation","class":"Patient","classAlias":"Patient","renderAs": {"edit": {"required": "true"},"new": {"required": "true"}}, "join": "INNER"}
+	"Bezeichnung": {
+		"type": "BezeichnungT",
+		"stereotype": "enumeration",
+		"classAlias": "BezeichnungT0",
+		"label": "Bezeichnung",
+		"renderAs": {
+			"edit": {
+				"required": "true",
+				"disabled": "",
+				"control": "menu"
+			},
+			"new": {
+				"required": "true",
+				"disabled": "",
+				"control": "menu"
+			},
+			"detail": {
+				"required": "",
+				"disabled": true,
+				"control": "menu"
+			}
+		}
+	},
+	"dateiname": {
+		"type": "pictureT",
+		"stereotype": "structure",
+		"group": "true",
+		"label": "pictureT"
+	},
+	"_Patient": {
+		"type": "foreign",
+		"stereotype": "relation",
+		"class": "Patient",
+		"classAlias": "Patient",
+		"renderAs": {
+			"edit": {
+				"required": "true"
+			},
+			"new": {
+				"required": "true"
+			}
+		},
+		"join": "INNER"
+	}
 }

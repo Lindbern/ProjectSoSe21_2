@@ -62,9 +62,13 @@ $klasse->render("Fachrichtung");
 Core::$view->render("view_Impftermin_b");
 ?>
 <form method="post" action="?task=Arzt_handle_Impftermin_b&id=<?=$klasse->id?>" data-ajax="false">
+
+<?php if(Core::$user->Gruppe > 3){ ?>
 <button type="submit" name="auswählen" id="auswählen" class="ui-btn ui-icon-bullets ui-btn-icon-left">Auswählen</button>
 </form>
 <a href="?task=Impftermin_new&Arzt=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left">Neuanlegen</a>
+<?php } ?>
+
 </div>
 </div>
 <th></th>

@@ -58,12 +58,16 @@ $hover = "entfernen";
 <?php if($access["detail"] == "true"){ ?>
 <a href="?task=Impftermin_detail&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all ui-btn-inline">show</a>
 <?php } ?>
-<?php if($access["edit"] == "true"){ ?>
+
+
+<?php if(Core::$user->Gruppe >= 3){
+    if($access["edit"] == "true"){ ?>
 <a href="?task=Impftermin_edit&id=<?=$klasse->id?>&task_source=Impftermin" data-ajax="false" data-role="button"  class="ui-btn ui-icon-pencil ui-btn-icon-notext ui-corner-all ui-btn-inline">edit</a>
-<?php } ?>
-<?php if($access["delete"] == "true"){ ?>
+<?php }} ?>
+<?php if(Core::$user->Gruppe >= 3){ if($access["delete"] == "true"){ ?>
 <a href="?task=Impftermin_delete&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-inline" onclick="return confirm("Soll der Datensatz mit der ID: <?=$Klasse->id." wirklich gelöscht werden?"?>")">delete</a>
-<?php } ?>
+<?php }} ?>
+
 </td>
 </tr>
 <?php
@@ -72,7 +76,7 @@ $hover = "entfernen";
 </tbody>
 </table>
 </div>
-<?php if($access["new"] == "true"){ ?>
+<?php if(Core::$user->Gruppe >= 3){ if($access["new"] == "true"){ ?>
 <a href="?task=Impftermin_new" class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left" data-ajax="false">Neuanlegen</a><br>
-<?php } ?>
+<?php }} ?>
 <br>

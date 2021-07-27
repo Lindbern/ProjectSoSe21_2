@@ -3,37 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Arzt_edit.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.home.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Arzt_handle_Impftermin_b.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.logout.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.user_edit.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.entry.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.user_register.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/includes/main_navbar.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.GruppeT_new.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Impfstoff_detail.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Arzt_overview.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/includes/getSnippet/nav.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Patient_detail.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/includes/system.main.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Dokument_delete.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/includes/system.taskmap.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/includes/getSnippet/selectmenuCombo.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Dokument_detail.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.speicherstand_delete.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.datenimport.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Arzt_new.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.BezeichnungT_edit.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Arzt_detail.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.BezeichnungT_delete.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.speicherstand_edit.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.BezeichnungT_new.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.DeinImpftermin.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.GruppeT_overview.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.Patient_detail.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.login.php</file>
-            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Impftermin_detail.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/controller/controller.Dokument_overview.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.Dokument_detail.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.Dokument_edit.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.home.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/models/model.Dokument.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.Dokument_overview.php</file>
+            <file>file:/C:/xampp/htdocs/ProjectSoSe21_2/views/view.Dokument_a_detail_overview.php</file>
         </group>
     </open-files>
 </project-private>

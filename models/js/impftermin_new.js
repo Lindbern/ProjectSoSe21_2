@@ -16,12 +16,12 @@ rules: {
 		string: true
 	},
 	Aussage: {
-		integer: true,
-		digits: true
+		string: true,
+		maxlength: 50
 	},
 	Ausführung: {
-		integer: true,
-		digits: true
+		string: true,
+		maxlength: 50
 	},
 	Impfbericht: {
 		string: true,

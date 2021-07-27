@@ -13,6 +13,7 @@ $Impftermin=new Impftermin();
 Impftermin::$activeViewport="detail";
 $Impftermin->loadDBData($_GET["id"]);
 Core::publish($Impftermin, "Impftermin");
+
 //Beziehungen:
 //Enumerationen
 //to: Patient  :

@@ -20,15 +20,18 @@ $hover = "entfernen";
 </div>
 <?php } ?>
 
-</h1>
+</h1>  
 </div>
+
 <form>
 <input id="filterTable-input" data-type="search">
 </form>
+
 <div class="overflowx">
 <table data-role="table" id="tbl_Dokument" data-filter="true" data-input="#filterTable-input" class="ui-responsive" data-mode="columntoggle" data-column-btn-theme="b" data-column-btn-text="Spalten" data-column-popup-theme="a">
 <thead>
 <tr>
+    
 <?php $Dokument->renderHeader("id", "table"); ?>
 <?php $Dokument->renderHeader("c_ts", "table"); ?>
 <?php $Dokument->renderHeader("m_ts", "table"); ?>

@@ -1,6 +1,6 @@
 {
 	"upload": {
-		"type": "file",
+		"type": "picture",
 		"groupIn": "true",
 		"stereotype": "primitive"
 	},

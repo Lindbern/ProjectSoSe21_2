@@ -22,6 +22,7 @@ $hover = "entfernen";
 <form id="form_Dokument" method="post" action="?task=Dokument_edit&id=<?=$Dokument->id?>" data-ajax="false" enctype="<?=$Dokument::$enctype?>">
 <div class="ui-field-contain">
 <?php
+
 $Dokument->renderLabel("id");
 $Dokument->render("id");
 $Dokument->renderLabel("c_ts");
@@ -30,15 +31,25 @@ $Dokument->renderLabel("m_ts");
 $Dokument->render("m_ts");
 $Dokument->renderLabel("Bezeichnung");
 $Dokument->render("Bezeichnung");
-$Dokument->renderLabel("dateiname");
-$Dokument->renderLabel("dateiname_upload");
-$Dokument->render("dateiname_upload");
-$Dokument->renderLabel("dateiname_path");
-$Dokument->render("dateiname_path");
+
+
+
 $Dokument->renderLabel("dateiname_title");
 $Dokument->render("dateiname_title");
+
 $Dokument->renderLabel("_Patient");
 $Dokument->render("_Patient");
+
+$Dokument->renderLabel("dateiname");
+$Dokument->render("dateiname");
+
+$Dokument->renderLabel("dateiname_upload");
+$Dokument->render("dateiname_upload");
+
+$Dokument->renderLabel("dateiname_path");
+$Dokument->render("dateiname_path");
+
+
 ?>
 <button type="submit" name="update" id="update" value="1" style="width:100%">update</button>
 </div>

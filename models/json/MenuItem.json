@@ -9,6 +9,7 @@
 					"icon": "home",
 					"renderAs": "miniButton",
 					"heading": "Impfzentrum",
+					"text": "Covid 19 Impfzentrum ",
 					"display": "Covid 19 Impfzentrum "
 				},
 				"G0": {
@@ -314,7 +315,7 @@
 					"columns": "",
 					"heading": "",
 					"text": "",
-					"display": "false"
+					"display": "true"
 				},
 				"G2": {
 					"description": "",
@@ -327,7 +328,7 @@
 					"columns": "",
 					"heading": "",
 					"text": "",
-					"display": "false"
+					"display": "true"
 				},
 				"G3": {
 					"description": "",
@@ -340,7 +341,7 @@
 					"columns": "",
 					"heading": "",
 					"text": "",
-					"display": "false"
+					"display": "true"
 				},
 				"G4": {
 					"description": "",
@@ -399,7 +400,7 @@
 					"menu": "",
 					"linkFunction": "",
 					"image": "",
-					"display": "false"
+					"display": "true"
 				},
 				"G3": {
 					"description": "",
@@ -409,7 +410,7 @@
 					"menu": "",
 					"linkFunction": "",
 					"image": "",
-					"display": "false"
+					"display": "true"
 				},
 				"G4": {
 					"description": "",
@@ -626,7 +627,7 @@
 					"theme": ""
 				},
 				"G2": {
-					"display": "true",
+					"display": "false",
 					"label": "",
 					"link": "",
 					"linkFunction": "",
@@ -758,7 +759,7 @@
 					"theme": ""
 				},
 				"G2": {
-					"display": "true",
+					"display": "false",
 					"label": "",
 					"link": "",
 					"linkFunction": "",

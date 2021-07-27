@@ -36,6 +36,7 @@ $hover = "entfernen";
 <?php $Arzt->renderHeader("Vorname", "table"); ?>
 <?php $Arzt->renderHeader("Email", "table"); ?>
 <?php $Arzt->renderHeader("Fachrichtung", "table"); ?>
+    
 <th></th>
 </tr>
 </thead>
@@ -50,16 +51,19 @@ $hover = "entfernen";
 <?php $klasse->render("Vorname"); ?>
 <?php $klasse->render("Email"); ?>
 <?php $klasse->render("Fachrichtung"); ?>
+<?php $klasse->render("_User_uid"); ?>
 <td>
-<?php if($access["detail"] == "true"){ ?>
+    
+<?php if(Core::$user->Gruppe >=3) { if($access["detail"] == "true"){ ?>
 <a href="?task=Arzt_detail&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all ui-btn-inline">show</a>
-<?php } ?>
-<?php if($access["edit"] == "true"){ ?>
+<?php }} ?>
+
+<?php if(Core::$user->Gruppe >=3){ if($access["edit"] == "true"){ ?>
 <a href="?task=Arzt_edit&id=<?=$klasse->id?>&task_source=Arzt" data-ajax="false" data-role="button"  class="ui-btn ui-icon-pencil ui-btn-icon-notext ui-corner-all ui-btn-inline">edit</a>
-<?php } ?>
-<?php if($access["delete"] == "true"){ ?>
+<?php }} ?>
+<?php if(Core::$user->Gruppe >=3){ if($access["delete"] == "true"){ ?>
 <a href="?task=Arzt_delete&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-inline" onclick="return confirm("Soll der Datensatz mit der ID: <?=$Klasse->id." wirklich gelöscht werden?"?>")">delete</a>
-<?php } ?>
+<?php }} ?>
 </td>
 </tr>
 <?php
@@ -68,7 +72,7 @@ $hover = "entfernen";
 </tbody>
 </table>
 </div>
-<?php if($access["new"] == "true"){ ?>
+<?php if(Core::$user->Gruppe >= 3) { if($access["new"] == "true"){ ?>
 <a href="?task=Arzt_new" class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left" data-ajax="false">Neuanlegen</a><br>
-<?php } ?>
+<?php }} ?>
 <br>

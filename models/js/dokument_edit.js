@@ -1,4 +1,4 @@
-$("#form_Impftermin").validate({
+$("#form_Dokument").validate({
 rules: {
 	id: {
 	},
@@ -12,34 +12,35 @@ rules: {
 		string: true,
 		maxlength: 50
 	},
-	Termin: {
-		string: true
+	Bezeichnung: {
+		required: true
 	},
-	Aussage: {
-		string: true,
-		maxlength: 50
-	},
-	Ausführung: {
-		string: true,
-		maxlength: 50
-	},
-	Impfbericht: {
-		string: true,
-		maxlength: 50
+	dateiname: {
 	},
 	_Patient: {
 		string: true,
 		required: true
 	},
-	_Arzt: {
-		string: true,
-		required: true
-	},
-	_Patient_identifier: {
+	Bezeichnung_literal: {
 		string: true,
 		maxlength: 50
 	},
-	_Arzt_identifier: {
+	dateiname_upload: {
+		string: true
+	},
+	dateiname_path: {
+		string: true,
+		maxlength: 50
+	},
+	dateiname_title: {
+		string: true,
+		maxlength: 50
+	},
+	dateiname_description: {
+		string: true,
+		maxlength: 50
+	},
+	_Patient_identifier: {
 		string: true,
 		maxlength: 50
 	}

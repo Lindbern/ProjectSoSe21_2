@@ -55,20 +55,26 @@ $klasse->renderLabel("Adresse_PLZ");
 $klasse->render("Adresse_PLZ");
 $klasse->renderLabel("Adresse_Ort");
 $klasse->render("Adresse_Ort");
+
+
 ?>
 </div>
 </div><br><br>
-<?php if($access["relations"] == "true"){ ?>
+
+<!--if($access["relations"] == "true")-->
+
+<?php if(Core::$user->Gruppe >0) { ?> 
 <h3 class="ui-bar ui-bar-b ui-corner-all">Beziehungen</h3>
 <div class="ui-body ui-body-a ui-corner-all">
 <div data-role="tabs" id="tabs" data-theme="a">
 <div data-role="navbar" data-theme="a">
 <ul>
-<li><a href="#1" data-ajax="false">Dokument</a></li>
-<li><a href="#2" data-ajax="false">Impftermin</a></li>
+<li><a href="#1" data-ajax="false">Impftermin</a></li>
+<li><a href="#2" data-ajax="false">Dokument</a></li>
 </ul>
 </div>
-<div id="1" class="ui-body-d ui-content">
+    
+<div id="2" class="ui-body-d ui-content">
 <div id="viewDokument_a">
 <?php
 Core::$view->render("view_Dokument_a");
@@ -77,10 +83,11 @@ Core::$view->render("view_Dokument_a");
 <button type="submit" name="auswählen" id="auswählen" class="ui-btn ui-icon-bullets ui-btn-icon-left">Auswählen</button>
 </form>
 <a href="?task=Dokument_new&Patient=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left">Neuanlegen</a>
-</div>
+</div>  
 </div>
 <th></th>
-<div id="2" class="ui-body-d ui-content">
+
+<div id="1" class="ui-body-d ui-content">
 <div id="viewImpftermin_a">
 <?php
 Core::$view->render("view_Impftermin_a");
@@ -90,6 +97,7 @@ Core::$view->render("view_Impftermin_a");
 </form>
 <a href="?task=Impftermin_new&Patient=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left">Neuanlegen</a>
 </div>
+    
 </div>
 <th></th>
 </div>

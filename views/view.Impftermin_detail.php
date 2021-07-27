@@ -10,12 +10,12 @@ $hover = "entfernen";
 $Impftermin_list_2 = Core::$view->Impftermin_list_2 ; ?>
 <h3 class="ui-bar ui-bar-b ui-corner-all ">
 <a href="?task=Impftermin" data-ajax="false" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-inline" align="right">back</a>
-<?php if($access["edit"] == "true"){ ?>
+<?php if(Core::$user->Gruppe > 3){ if($access["edit"] == "true"){ ?>
 <a href="?task=Impftermin_edit&id=<?=$klasse->id?>&task_source=Impftermin_detail" data-ajax="false" data-role="button"  class="ui-btn ui-icon-pencil ui-btn-icon-notext   ui-corner-all ui-btn-inline">edit</a>
-<?php } ?>
-<?php if($access["delete"] == "true"){ ?>
+<?php }} ?>
+<?php if(Core::$user->Gruppe > 3){if($access["delete"] == "true"){ ?>
 <a href="?task=Impftermin_delete&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-inline">delete</a>
-<?php } ?>
+<?php }} ?>
 
  Impftermin
 
@@ -68,9 +68,14 @@ $klasse->render("_Arzt");
 Core::$view->render("view_Patient");
 ?>
 <form method="post" action="?task=Impftermin_handle_Patient&id=<?=$klasse->id?>" data-ajax="false">
+
+        
+<?php if(Core::$user->Gruppe > 3){ ?>
 <button type="submit" name="auswählen" id="auswählen" class="ui-btn ui-icon-bullets ui-btn-icon-left">Verbindung wählen</button>
 </form>
 <a href="?task=Patient_new&Impftermin=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left">Neuanlegen</a>
+<?php } ?>
+
 </div>
 </div>
 <th></th>
@@ -80,9 +85,13 @@ Core::$view->render("view_Patient");
 Core::$view->render("view_Impfstoff_a");
 ?>
 <form method="post" action="?task=Impftermin_handle_Impfstoff_a&id=<?=$klasse->id?>" data-ajax="false">
+    
+<?php if(Core::$user->Gruppe > 3){ ?>
 <button type="submit" name="auswählen" id="auswählen" class="ui-btn ui-icon-bullets ui-btn-icon-left">Auswählen</button>
 </form>
 <a href="?task=Impfstoff_new&Impftermin=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-left">Neuanlegen</a>
+<?php } ?>
+
 </div>
 </div>
 <th></th>

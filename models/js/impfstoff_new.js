@@ -1,4 +1,4 @@
-$("#form_Impftermin").validate({
+$("#form_Impfstoff").validate({
 rules: {
 	id: {
 	},
@@ -12,34 +12,34 @@ rules: {
 		string: true,
 		maxlength: 50
 	},
-	Termin: {
+	Bezeichnung: {
+		string: true,
+		maxlength: 50
+	},
+	Hersteller: {
+		string: true,
+		maxlength: 50
+	},
+	Zulassungsdatum: {
 		string: true
 	},
-	Aussage: {
+	Zulassungsstelle: {
 		string: true,
 		maxlength: 50
 	},
-	Ausführung: {
-		string: true,
-		maxlength: 50
-	},
-	Impfbericht: {
-		string: true,
-		maxlength: 50
-	},
-	_Patient: {
+	_Impftermin: {
 		string: true,
 		required: true
 	},
-	_Arzt: {
+	_Impfstoffart: {
 		string: true,
 		required: true
 	},
-	_Patient_identifier: {
+	_Impftermin_identifier: {
 		string: true,
 		maxlength: 50
 	},
-	_Arzt_identifier: {
+	_Impfstoffart_identifier: {
 		string: true,
 		maxlength: 50
 	}

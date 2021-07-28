@@ -60,11 +60,11 @@ $hover = "entfernen";
 <?php } ?>
 
 
-<?php if(Core::$user->Gruppe >= 3){
+<?php if(Core::$user->Gruppe >= 2){
     if($access["edit"] == "true"){ ?>
 <a href="?task=Impftermin_edit&id=<?=$klasse->id?>&task_source=Impftermin" data-ajax="false" data-role="button"  class="ui-btn ui-icon-pencil ui-btn-icon-notext ui-corner-all ui-btn-inline">edit</a>
 <?php }} ?>
-<?php if(Core::$user->Gruppe >= 3){ if($access["delete"] == "true"){ ?>
+<?php if(Core::$user->Gruppe >= 2){ if($access["delete"] == "true"){ ?>
 <a href="?task=Impftermin_delete&id=<?=$klasse->id?>" data-ajax="false" data-role="button"  class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-inline" onclick="return confirm("Soll der Datensatz mit der ID: <?=$Klasse->id." wirklich gelöscht werden?"?>")">delete</a>
 <?php }} ?>
 
